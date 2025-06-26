@@ -26,6 +26,6 @@
     "path": "latest",
     "sharp": "latest",
     "socket.io": "latest",
-    "winston": "latest"
+    "winston": "^3.17.0"
   }
 }
