@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/clearance_system'; // Update if needed
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://<username>:<password>@<cluster-url>/clearance_system'; // Use production MongoDB URI or keep as is for local dev
 
 async function resetUserPassword(email, newPassword) {
   await mongoose.connect(MONGO_URI);

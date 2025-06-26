@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: API contract for department, student, clearance, approval, notification, and authentication endpoints.
 servers:
-  - url: http://localhost:3000/api
+  - url: https://biu-uni.vercel.app/api
 paths:
   /departments:
     get:

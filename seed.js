@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Department = require('./models/Department'); // Adjust path if needed
 
-const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/clearance_system";
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://<username>:<password>@<cluster-url>/clearance_system'; // Use production MongoDB URI or keep as is for local dev
 
 async function seedDepartments() {
   await mongoose.connect(MONGO_URI);

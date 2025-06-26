@@ -6,7 +6,7 @@ const Student = require("../models/Student");
 const User = require("../models/User");
 
 // TODO: Update this with your actual MongoDB connection string
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/clearance_system'; // Update if needed
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://<username>:<password>@<cluster-url>/clearance_system'; // Use production MongoDB URI or keep as is for local dev
 
 async function main() {
   await mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });

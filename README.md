@@ -89,7 +89,7 @@ env
 Copy
 Edit
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/clearance-system
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/clearance_system
 JWT_SECRET=your_jwt_secret
 EMAIL_USER=your_email@example.com
 EMAIL_PASS=your_email_password
