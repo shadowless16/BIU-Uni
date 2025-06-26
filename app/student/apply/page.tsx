@@ -60,7 +60,7 @@ export default function ClearanceApplication() {
   useEffect(() => {
     const fetchDepartments = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/departments");
+        const res = await fetch("https://biu-uni.onrender.com/api/departments");
         const data = await res.json();
         if (Array.isArray(data) && data.length > 0) {
           setDepartments(data);

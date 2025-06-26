@@ -4,7 +4,7 @@
 export async function GET(req, { params }) {
   const { studentId } = params;
   // Use the correct backend path with /api/department
-  const backendUrl = `http://localhost:5000/api/department/students/${studentId}`;
+  const backendUrl = `https://biu-uni.onrender.com/api/department/students/${studentId}`;
   try {
     const res = await fetch(backendUrl, {
       method: 'GET',

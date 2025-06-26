@@ -4,7 +4,7 @@ export async function GET(request, { params }) {
   const { deptId } = params;
   try {
     // Proxy the request to your Express backend (corrected path)
-    const backendRes = await fetch(`http://localhost:5000/api/department/departments/${deptId}`);
+    const backendRes = await fetch(`https://biu-uni.onrender.com/api/department/departments/${deptId}`);
     if (!backendRes.ok) {
       return NextResponse.json({ error: "Department not found" }, { status: backendRes.status });
     }

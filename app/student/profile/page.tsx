@@ -44,7 +44,7 @@ export default function StudentProfile() {
       setLoading(true);
       try {
         const token = localStorage.getItem("token") || sessionStorage.getItem("token");
-        const res = await fetch("http://localhost:5000/api/student/profile", {
+        const res = await fetch("https://biu-uni.onrender.com/api/student/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!res.ok) throw new Error("Failed to fetch profile");

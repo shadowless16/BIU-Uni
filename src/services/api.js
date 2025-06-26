@@ -2,7 +2,7 @@ import axios from "axios"
 
 // Create axios instance with base configuration
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  baseURL: process.env.REACT_APP_API_URL || "https://biu-uni.onrender.com/api",
   timeout: 30000, // 30 seconds timeout
   headers: {
     "Content-Type": "application/json",
@@ -68,7 +68,7 @@ api.interceptors.response.use(
 
         if (refreshToken) {
           const response = await axios.post(
-            `${process.env.REACT_APP_API_URL || "http://localhost:5000/api"}/auth/refresh-token`,
+            `${process.env.REACT_APP_API_URL || "https://biu-uni.onrender.com/api"}/auth/refresh-token`,
             { refreshToken },
           )
 

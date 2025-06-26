@@ -20,7 +20,7 @@ class NotificationService {
   initializeRealTime(userId) {
     if (typeof window !== "undefined" && window.io) {
       try {
-        this.socket = window.io(process.env.REACT_APP_API_URL || "http://localhost:5000", {
+        this.socket = window.io(process.env.REACT_APP_API_URL || "https://biu-uni.onrender.com", {
           transports: ["websocket", "polling"],
           timeout: 20000,
         })

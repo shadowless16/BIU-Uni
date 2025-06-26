@@ -137,7 +137,7 @@ export default function RegisterPage() {
       const form = new FormData()
       Object.entries(formData).forEach(([key, value]) => form.append(key, value))
       form.append("profilePicture", profilePicture)
-      const res = await fetch("http://localhost:5000/api/auth/register", {
+      const res = await fetch("https://biu-uni.onrender.com/api/auth/register", {
         method: "POST",
         body: form,
       })
@@ -181,7 +181,7 @@ export default function RegisterPage() {
     }
     setLoading(true)
     try {
-      const res = await fetch("http://localhost:5000/api/auth/register-department", {
+      const res = await fetch("https://biu-uni.onrender.com/api/auth/register-department", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(deptForm),
