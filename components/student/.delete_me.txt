@@ -1,0 +1,1 @@
+This folder previously contained page components that have now been moved to the /app route folders. You can safely delete this folder if it is empty.
